@@ -3,7 +3,8 @@
 //
 
 #pragma once
-
+#include "TabSDIFrameWnd.h"
+#define CFrameWnd CTabSDIFrameWnd
 class CMainFrame : public CFrameWnd
 {
 	

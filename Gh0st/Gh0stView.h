@@ -3,7 +3,7 @@
 //
 
 #pragma once
-
+#define CListView CCJListView
 
 class CGh0stView : public CListView
 {
@@ -33,7 +33,7 @@ public:
 #endif
 
 protected:
-
+	CListCtrl* m_pListCtrl;
 // 生成的消息映射函数
 protected:
 	DECLARE_MESSAGE_MAP()
