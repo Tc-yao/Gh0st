@@ -38,7 +38,11 @@ protected:  // 控件条嵌入成员
 protected:
 	afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
 	DECLARE_MESSAGE_MAP()
-
+public:
+	void CMainFrame::Activate(UINT nPort, UINT nMaxConnections);
+	static void CALLBACK CMainFrame::NotifyProc(LPVOID lpParam, ClientContext *pContext, UINT nCode);
+	static void CMainFrame::ProcessReceiveComplete(ClientContext *pContext);
+	afx_msg void OnClose();
 };
 
 

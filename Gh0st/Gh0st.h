@@ -31,6 +31,7 @@ public:
 
 public:
 	bool m_bIsQQwryExist;
+	CView* m_pConnectView = NULL;
 };
 
 extern CGh0stApp theApp;

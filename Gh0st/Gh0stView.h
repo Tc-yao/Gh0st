@@ -3,6 +3,7 @@
 //
 
 #pragma once
+#include "Gh0stDoc.h"
 #define CListView CCJListView
 
 class CGh0stView : public CListView
@@ -37,6 +38,9 @@ protected:
 // 生成的消息映射函数
 protected:
 	DECLARE_MESSAGE_MAP()
+	afx_msg LRESULT OnMyInitialUpdate(WPARAM wParam, LPARAM lParam);
+	afx_msg LRESULT OnAddToList(WPARAM wParam, LPARAM lParam);
+	int m_nCount=0;
 };
 
 #ifndef _DEBUG  // Gh0stView.cpp 中的调试版本

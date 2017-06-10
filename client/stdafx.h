@@ -18,7 +18,6 @@
 
 #include <afxwin.h>         // MFC 核心组件和标准组件
 #include <afxext.h>         // MFC 扩展
-#include <afxcview.h>
 
 
 #include <afxdisp.h>        // MFC 自动化类
@@ -34,16 +33,12 @@
 
 #include <afxcontrolbars.h>     // 功能区和控件条的 MFC 支持
 
+#include "../common/macros.h"
 
 
-#include "CJ60Lib.h"
-#include "include\IOCPServer.h"
 
-enum 
-{
-	WM_MYINITIALUPDATE = WM_USER + 101,
-	WM_ADDTOLIST,
-};
+
+
 
 
 #ifdef _UNICODE

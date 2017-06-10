@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="完成端口">
+      <UniqueIdentifier>{cc159b51-e727-4aad-85fc-d793a89aa589}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -48,6 +51,24 @@
     <ClInclude Include="ThemeUtil.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="BuildView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SetingView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Buffer.h">
+      <Filter>完成端口</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CpuUsage.h">
+      <Filter>完成端口</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IOCPServer.h">
+      <Filter>完成端口</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Mapper.h">
+      <Filter>完成端口</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Gh0st.cpp">
@@ -73,6 +94,21 @@
     </ClCompile>
     <ClCompile Include="TabSDIFrameWnd.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BuildView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SetingView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Buffer.cpp">
+      <Filter>完成端口</Filter>
+    </ClCompile>
+    <ClCompile Include="include\CpuUsage.cpp">
+      <Filter>完成端口</Filter>
+    </ClCompile>
+    <ClCompile Include="include\IOCPServer.cpp">
+      <Filter>完成端口</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
